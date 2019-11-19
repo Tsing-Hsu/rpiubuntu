@@ -26,4 +26,11 @@ ListenPort = 51280
 SaveConfig = false
 Address = 10.0.0.1/24
 ```
-##
+## check if working
+```
+sudo wg-quick up wg0
+sudo wg
+sudo wg-quick down wg0
+```
+
+## 
