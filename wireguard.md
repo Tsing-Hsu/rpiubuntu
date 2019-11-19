@@ -25,7 +25,12 @@ PrivateKey = YOUR_SERVER_PRIVATE_KEY
 ListenPort = 51280
 SaveConfig = false
 Address = 10.0.0.1/24
+
+[Peer]
+PublicKey = PUBLIC_KEY_ON_ANDROID
+AllowedIPs = 10.0.0.2/32
 ```
+
 ## check if working
 ```
 sudo wg-quick up wg0
