@@ -17,7 +17,30 @@ sudo apt install wireguard
 wg genkey | sudo tee -a /etc/wireguard/wg0.conf | wg pubkey | sudo tee /etc/wireguard/publickey
 ```
 
-## generate config file
+## setup on android
+
+Download Wireguard.
+
+click + sign, select create from scratch.
+
+Name: yourname
+
+Private key, click generate
+Puplic key, copy 
+
+adresses: 10.0.0.2/32
+
+DNS servers: 8.8.8.8
+
+add peer
+Puplic key YOUR_SERVER_PUBLIC_KEY
+allowed IP 0.0.0.0/0
+
+endpoint: 
+router address /pi address: port
+
+
+## modify config file
 ```
 sudo nano /etc/wireguard/wg0.conf
 
