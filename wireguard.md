@@ -58,12 +58,14 @@ uncomment following lines
 
 ```
 net.ipv4.ip_forward = 1
-net.ipv6.conf.all.forwarding = 1
 ```
 
 and 
 
 ```
-net.ipv4.ip_forward = 1
 net.ipv6.conf.all.forwarding = 1
+```
+
+```
+sudo sysctl -p
 ```
