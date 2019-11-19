@@ -18,6 +18,12 @@ wg genkey | sudo tee -a /etc/wireguard/wg0.conf | wg pubkey | sudo tee /etc/wire
 
 ## generate config file
 ```
+sudo nano /etc/wireguard/wg0.conf
 
+[Interface]
+PrivateKey = YOUR_SERVER_PRIVATE_KEY
+ListenPort = 51280
+SaveConfig = false
+Address = 10.0.0.1/24
 ```
-
+##
