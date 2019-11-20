@@ -63,3 +63,6 @@ sudo /etc/init.d/ddclient status
 sudo /etc/init.d/ddclient restart
 ```
 
+## add NAT to router
+
+
