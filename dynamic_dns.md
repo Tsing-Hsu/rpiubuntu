@@ -38,3 +38,24 @@ login=$USERNAME
 password='$PASSWORD'
 $HOSTNAME1,$HOSTNAME2
 ```
+
+## test configuration
+
+```
+sudo ddclient -daemon=0 -debug -verbose -noquiet
+```
+
+## check other settings
+
+```
+sudo nano /etc/default/ddclient
+```
+
+## check service status
+
+```
+sudo /etc/init.d/ddclient status
+```
+
+
+
