@@ -19,7 +19,7 @@ wg genkey | sudo tee -a /etc/wireguard/wg0.conf | wg pubkey | sudo tee /etc/wire
 
 ## setup on android
 
-Download Wireguard.
+Download Wireguard from play store
 
 click + sign, select create from scratch.
 
@@ -38,6 +38,13 @@ allowed IP 0.0.0.0/0
 
 endpoint: 
 router address /pi address: port
+
+## setup wireguard on win 10
+
+download wireguard for win 64-bit.
+
+right click add empty tunnel
+
 
 
 ## modify config file
