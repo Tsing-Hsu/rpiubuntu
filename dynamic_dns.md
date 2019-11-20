@@ -57,5 +57,9 @@ sudo nano /etc/default/ddclient
 sudo /etc/init.d/ddclient status
 ```
 
+## restart service
 
+```
+sudo /etc/init.d/ddclient restart
+```
 
