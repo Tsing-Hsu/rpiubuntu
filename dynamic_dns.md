@@ -1,13 +1,24 @@
-# get a dyn dns provider
+## get a dyn dns provider
 
-In our case, we use spDYN from www.spdyn.de
+In our case, we use spDYN from <www.spdyn.de>
 
-Create host
+Create host <host_name>
 
-Create Update-Token
+Create Update-Token <update_token>
 
-# setup ddclient
+## setup ddclient
 
+```
+sudo apt install ddclient
 ```
 
 ```
+sudo nano /etc/ddclient.conf
+```
+
+use server: update.spdyn.de
+
+use protocol: dyndns2
+
+username: <host_name>
+password: <update_token>
