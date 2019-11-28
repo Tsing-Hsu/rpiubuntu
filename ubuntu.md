@@ -27,3 +27,15 @@ apppend
 ```
 cgroup_enable=cpuset cgroup_enable=memory cgroup_memory=1
 ```
+
+reboot 
+
+check
+
+```
+cat /proc/cmdline
+```
+
+```
+cat /proc/cgroups
+```
