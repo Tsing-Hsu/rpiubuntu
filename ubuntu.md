@@ -7,3 +7,7 @@
 default login is user `ubuntu`, password `ubuntu`
 
 customize user in 'user-data' file on the 'system-boot' partition
+
+
+## install MicroK8s
+
