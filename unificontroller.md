@@ -11,6 +11,7 @@
 sudo apt update && sudo apt install ca-certificates apt-transport-https
 ```
 
+### install via apt does not work yet
 ```
 echo 'deb https://www.ui.com/downloads/unifi/debian stable ubiquiti' | sudo tee /etc/apt/sources.list.d/100-ubnt-unifi.list
 ```
@@ -21,6 +22,18 @@ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv 06E85760C0A52C50
 
 ```
 sudo apt update && sudo apt install unifi
+```
+
+
+### manual install
+
+```
+wget https://get.glennr.nl/unifi/install/install_latest/unifi-latest.sh; chmod +x unifi-latest.sh; ./unifi-latest.sh
+```
+
+```
+chmod +x unifi-5.12.22.sh
+./unifi-5.12.22.sh
 ```
 
 ## access
