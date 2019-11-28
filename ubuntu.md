@@ -19,3 +19,11 @@ sudo apt upgrade -y
 
 ## install MicroK8s
 
+### enable cgroup
+
+
+in /boot/cmdline.txt
+
+```
+cgroup_enable=cpuset cgroup_enable=memory cgroup_memory=1
+```
