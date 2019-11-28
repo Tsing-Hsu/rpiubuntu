@@ -28,13 +28,11 @@ sudo apt update && sudo apt install unifi
 ### manual install
 
 ```
-wget https://get.glennr.nl/unifi/install/install_latest/unifi-latest.sh; chmod +x unifi-latest.sh; ./unifi-latest.sh
+wget https://get.glennr.nl/unifi/install/install_latest/unifi-latest.sh; 
+chmod +x unifi-latest.sh; 
+sudo ./unifi-latest.sh
 ```
 
-```
-chmod +x unifi-5.12.22.sh
-./unifi-5.12.22.sh
-```
 
 ## access
 
