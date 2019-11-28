@@ -22,8 +22,8 @@ sudo apt upgrade -y
 ### enable cgroup
 
 
-in /boot/cmdline.txt
-
+in `/boot/firmware/nobtcmd.txt`
+apppend
 ```
 cgroup_enable=cpuset cgroup_enable=memory cgroup_memory=1
 ```
