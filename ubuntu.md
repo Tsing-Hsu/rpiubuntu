@@ -28,7 +28,11 @@ apppend
 cgroup_enable=cpuset cgroup_enable=memory cgroup_memory=1
 ```
 
-reboot 
+reboot with
+
+```
+sudo reboot
+```
 
 check
 
@@ -38,4 +42,8 @@ cat /proc/cmdline
 
 ```
 cat /proc/cgroups
+```
+
+```
+sudo snap install microk8s --classic
 ```
