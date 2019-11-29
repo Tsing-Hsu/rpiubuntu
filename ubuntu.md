@@ -45,12 +45,7 @@ cat /proc/cgroups
 ### install docker
 
 ```
-sudo apt install \
-    apt-transport-https \
-    ca-certificates \
-    curl \
-    gnupg-agent \
-    software-properties-common
+sudo apt install apt-transport-https gnupg-agent
 ```
 
 ```
