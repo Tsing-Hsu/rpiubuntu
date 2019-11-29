@@ -51,3 +51,11 @@ sudo snap install microk8s --classic
 ```
 sudo usermod -a -G microk8s ubuntu
 ```
+
+```
+microk8s.kubectl proxy --accept-hosts=.* --address=0.0.0.0 &
+```
+
+```
+http://{Ubuntu_IP_address}:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/
+```
