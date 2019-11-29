@@ -48,4 +48,7 @@ cat /proc/cgroups
 sudo snap install docker
 ```
 
-  
+### install traefik
+
+```
+```
