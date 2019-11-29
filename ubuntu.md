@@ -17,15 +17,13 @@ sudo apt update
 sudo apt upgrade -y
 ```
 
-## install MicroK8s
-
 ### enable cgroup
 
 
 in `/boot/firmware/nobtcmd.txt`
 apppend
 ```
-cgroup_enable=cpuset cgroup_enable=memory cgroup_memory=1
+cgroup_enable=memory cgroup_memory=1
 ```
 
 reboot with
@@ -44,18 +42,8 @@ cat /proc/cmdline
 cat /proc/cgroups
 ```
 
-```
-sudo snap install microk8s --classic
-```
+### install docker
 
 ```
-sudo usermod -a -G microk8s ubuntu
-```
 
-```
-microk8s.kubectl proxy --accept-hosts=.* --address=0.0.0.0 &
-```
-
-```
-http://{Ubuntu_IP_address}:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/
 ```
