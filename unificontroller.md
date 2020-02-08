@@ -5,6 +5,10 @@
 * raspberry pi 3
 * 4GB or greater micro SD-card
 
+##
+Download Ubuntu 18.04.x 32-bit from here: [https://ubuntu.com/download/raspberry-pi]
+
+
 ## source
 [https://help.ubnt.com/hc/en-us/articles/220066768-UniFi-How-to-Install-and-Update-via-APT-on-Debian-or-Ubuntu]
 
