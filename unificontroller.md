@@ -27,7 +27,16 @@ sudo reboot
 
 relogin using ssh
 
+add keys for unifi
+```
+sudo wget -O /etc/apt/trusted.gpg.d/unifi-repo.gpg https://dl.ui.com/unifi/unifi-repo.gpg 
+```
 
+add sources for unifi
+
+```
+echo 'deb https://www.ui.com/downloads/unifi/debian stable ubiquiti' | sudo tee /etc/apt/sources.list.d/100-ubnt-unifi.list
+```
 
 
 
