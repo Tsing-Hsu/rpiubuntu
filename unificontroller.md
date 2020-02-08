@@ -1,4 +1,11 @@
-# Unifi Controller 
+# Unifi Controller on Raspberry Pi 3
+
+## Reqirements
+
+* raspberry pi 3
+* > 4GB micro SD-card
+
+p[
 
 ## source
 [https://help.ubnt.com/hc/en-us/articles/220066768-UniFi-How-to-Install-and-Update-via-APT-on-Debian-or-Ubuntu]
