@@ -21,7 +21,12 @@ change password, relogin
 ```
 sudo apt update
 sudo apt upgrade -y
+sudo apt install apt-transport-https
+sudo reboot
 ```
+
+relogin using ssh
+
 
 
 
