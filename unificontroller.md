@@ -38,7 +38,12 @@ add sources for unifi
 echo 'deb https://www.ui.com/downloads/unifi/debian stable ubiquiti' | sudo tee /etc/apt/sources.list.d/100-ubnt-unifi.list
 ```
 
-
+install mongodb database keys and sources
+```
+wget -qO - https://www.mongodb.org/static/pgp/server-3.4.asc | sudo apt-key add -
+echo "deb https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.4.list
+sudo apt update
+```
 
 ## source
 [https://help.ubnt.com/hc/en-us/articles/220066768-UniFi-How-to-Install-and-Update-via-APT-on-Debian-or-Ubuntu]
