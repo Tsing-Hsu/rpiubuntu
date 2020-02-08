@@ -3,9 +3,7 @@
 ## Reqirements
 
 * raspberry pi 3
-* > 4GB micro SD-card
-
-p[
+* 4GB or greater micro SD-card
 
 ## source
 [https://help.ubnt.com/hc/en-us/articles/220066768-UniFi-How-to-Install-and-Update-via-APT-on-Debian-or-Ubuntu]
