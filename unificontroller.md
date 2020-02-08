@@ -8,6 +8,23 @@
 ##
 Download Ubuntu 18.04.x 32-bit from here: [https://ubuntu.com/download/raspberry-pi]
 
+Find out IP adress.
+
+ssh into rpi
+``` 
+ssh ubuntu@x.x.x.x
+```
+where x.x.x.x is ip address of rpi
+
+change password, relogin
+
+```
+sudo apt update
+sudo apt upgrade -y
+```
+
+
+
 
 ## source
 [https://help.ubnt.com/hc/en-us/articles/220066768-UniFi-How-to-Install-and-Update-via-APT-on-Debian-or-Ubuntu]
