@@ -1,9 +1,42 @@
 # Unifi Controller on Raspberry Pi 3
 
-## Reqirements
+## Requirements
 
 * raspberry pi 3
 * 4GB or greater micro SD-card
+
+## unifi controller on raspbian
+
+Download Raspbian Buster Lite from https://www.raspberrypi.org/downloads/raspbian/ .
+
+Flash on micro SD-card,
+
+Create empty file named `ssh` on boot partition.
+
+Boot from sdcard.
+
+Find out IP-address x.x.x.x .
+
+ssh into rpi with user pi passord raspberry
+
+```
+ssh pi@x.x.x.x
+```
+
+change password
+```
+passwd
+```
+
+```
+sudo apt update
+sudo apt upgrade -y
+
+sudo apt install apt-transport-https
+
+```
+
+
 
 ##
 Download Ubuntu 18.04.x 32-bit from here: [https://ubuntu.com/download/raspberry-pi]
