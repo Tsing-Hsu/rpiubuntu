@@ -32,10 +32,40 @@ passwd
 sudo apt update
 sudo apt upgrade -y
 
+
+```
+sudo raspi-config
+```
+
+Change under Advanced Options, Memory Split to 16
+Expand File system
+change timezone and locale
+
+reboot
+```
+sudo reboot
+```
+
+
 sudo apt install apt-transport-https
 
 ```
+add keys for unifi
+```
+sudo wget -O /etc/apt/trusted.gpg.d/unifi-repo.gpg https://dl.ui.com/unifi/unifi-repo.gpg 
+```
 
+add sources for unifi
+
+```
+echo 'deb https://www.ui.com/downloads/unifi/debian stable ubiquiti' | sudo tee /etc/apt/sources.list.d/100-ubnt-unifi.list
+```
+
+
+```
+sudo apt update
+sudo apt install unifi
+```
 
 
 ##
