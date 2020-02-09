@@ -32,6 +32,8 @@ passwd
 sudo apt update
 sudo apt upgrade -y
 
+sudo apt install haveged -y
+
 
 ```
 sudo raspi-config
