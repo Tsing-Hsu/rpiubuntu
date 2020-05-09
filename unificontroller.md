@@ -24,6 +24,7 @@ ssh pi@x.x.x.x
 ```
 
 change password
+
 ```
 passwd
 ```
@@ -33,9 +34,6 @@ sudo apt update
 sudo apt upgrade -y
 
 sudo apt install haveged -y
-
-
-```
 sudo raspi-config
 ```
 
@@ -44,33 +42,36 @@ Expand File system
 change timezone and locale
 
 reboot
+
 ```
 sudo reboot
-```
-
-
 sudo apt install apt-transport-https
-
 ```
+
 add keys for unifi
+
 ```
 sudo wget -O /etc/apt/trusted.gpg.d/unifi-repo.gpg https://dl.ui.com/unifi/unifi-repo.gpg 
 ```
 
 add sources for unifi
-
 ```
 echo 'deb https://www.ui.com/downloads/unifi/debian stable ubiquiti' | sudo tee /etc/apt/sources.list.d/100-ubnt-unifi.list
 ```
-
 
 ```
 sudo apt update
 sudo apt install unifi
 ```
 
+## advanced unifi configuration
 
-##
+Create `config.gateway.json` in
+```
+chown unifi:unifi config.gateway.json
+```
+
+## 
 Download Ubuntu 18.04.x 32-bit from here: [https://ubuntu.com/download/raspberry-pi]
 
 Find out IP adress.
