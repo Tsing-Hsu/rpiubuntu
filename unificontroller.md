@@ -66,7 +66,30 @@ sudo apt install unifi
 
 ## advanced unifi configuration
 
-Create `config.gateway.json` in
+Create `/usr/lib/unifi/sites/default`
+
+```
+cd /usr/lib/unifi/data
+sudo mkdir ./sites
+sudo mkdir ./sites/default
+sudo chown -R unifi:unifi ./sites
+sudo chmod -R u=rwx,g=rx,o= sites
+```
+
+Create `config.gateway.json` in `/usr/lib/unifi/data/sites/default
+
+```
+cd /usr/lib/unifi/data/sites/default
+sudo nano config.gateway.json
+```
+
+verify json syntax
+
+```
+python -m json.tool config.gateway.json
+```
+
+Change ownership 
 ```
 chown unifi:unifi config.gateway.json
 ```
